@@ -3,12 +3,12 @@ import { SignUp } from "./page/SignUp";
 import { SignIn } from "./page/SignIn";
 import Dashbored from "./page/Dashbored";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { signOut } from "../store/redux/userSlice";
 import Header from "./components/Header";
 import Home from "./page/Home";
 import { EmailVerification } from "./page/EmailVerification";
-import ForgetPassword from "./page/forgetPassword";
+
 import ResetPasswordVerifiyToken from "./page/ResetPasswordVerifiyToken";
 import { ResetPassword } from "./page/ResetPassword";
 import { Toaster } from "react-hot-toast";
@@ -20,12 +20,12 @@ import Footer from "./components/Footer";
 import AllCVs from "./page/AllCVs";
 import About from "./page/About";
 import AllUserCVs from "./page/AllUserCVs ";
+import ForgetPassword from './page/ForgetPassword';
 
 function App() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { currentUser } = useSelector((state) => state.user);
 
   const handleSignOut = async () => {
     try {
