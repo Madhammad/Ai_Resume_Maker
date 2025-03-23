@@ -9,7 +9,7 @@ import { URL_BACKEND } from "./../../constant";
 export default function ForgetPassword() {
   const [email, setEmail] = useState("");
 
-  // const { currentUser } = useSelector((state) => state.user);
+ 
 
   const dispatch = useDispatch();
 
