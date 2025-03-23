@@ -49,7 +49,7 @@ export function SignIn() {
 
   return (
     <div className="mt-10 flex justify-center">
-      <div className="p-6 max-w-3xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row md:items-center gap-8">
+      <div className="p-6 max-w-3xl w-full shadow-lg rounded-lg flex flex-col md:flex-row md:items-center gap-8">
         {/* Left Section */}
         <div className="flex-1 text-center md:text-left">
           <Logo />
@@ -61,9 +61,12 @@ export function SignIn() {
 
         {/* Right Section */}
         <div className="flex-1">
-          <form onSubmit={handlesubmite} className="flex flex-col gap-4">
+          <form
+            onSubmit={handlesubmite}
+            className="flex flex-col gap-4 text-gray-700 "
+          >
             {/* Email Input */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-3">
               <label htmlFor="email" className="text-gray-700 font-semibold">
                 Your Email
               </label>
@@ -78,7 +81,7 @@ export function SignIn() {
             </div>
 
             {/* Password Input */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-3">
               <label
                 htmlFor="password2"
                 className="text-gray-700 font-semibold"

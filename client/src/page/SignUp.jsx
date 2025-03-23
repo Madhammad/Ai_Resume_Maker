@@ -58,8 +58,8 @@ export function SignUp() {
     }
   };
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100 p-4">
-      <div className="p-6 max-w-3xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row md:items-center gap-8">
+    <div className="min-h-screen flex justify-center items-center p-4">
+      <div className="p-6 max-w-3xl w-full  shadow-lg rounded-lg flex flex-col md:flex-row md:items-center gap-8">
         {/* Left Section */}
         <div className="flex-1 text-center md:text-left">
           <Logo />
@@ -71,10 +71,13 @@ export function SignUp() {
 
         {/* Right Section - Sign Up Form */}
         <div className="flex-1">
-          <form onSubmit={handlesubmite} className="flex flex-col gap-4">
+          <form
+            onSubmit={handlesubmite}
+            className="flex flex-col gap-4 text-gray-700"
+          >
             {/* Username Input */}
-            <div className="flex flex-col">
-              <label htmlFor="name" className="text-gray-700 font-semibold">
+            <div className="flex flex-col gap-3">
+              <label htmlFor="name" className=" font-semibold">
                 Username
               </label>
               <input
@@ -88,7 +91,7 @@ export function SignUp() {
             </div>
 
             {/* Email Input */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-3">
               <label htmlFor="email" className="text-gray-700 font-semibold">
                 E-mail
               </label>
@@ -103,7 +106,7 @@ export function SignUp() {
             </div>
 
             {/* Password Input */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-3">
               <label
                 htmlFor="password2"
                 className="text-gray-700 font-semibold"

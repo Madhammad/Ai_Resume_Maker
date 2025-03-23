@@ -337,7 +337,7 @@ const CVData = ({ cvTemplate }) => {
                 type="button"
                 onClick={handleGenerateSummary}
               >
-                <LoaderCircle className="animate-spin" />
+            
                 Generate Summary AI
               </button>
             </div>
