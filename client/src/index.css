@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+ul {
+  list-style-type: disc; /* Use bullet points */
+  margin-left: 20px; /* Indent the list */
+  padding-left: 15px;
+}
+
+/* Style for list items */
+li {
+  margin-bottom: 5px; /* Add spacing between items */
+  line-height: 1.6; /* Improve readability */
+  color: #4a5568; /* Dark gray color for better contrast */
+}
+
+/* Optional: Customize bullets */
+ul li::marker {
+  color: #939496; /* Blue bullet points */
+  font-size: 1.1em;
+}
+
+.details a {
+  color: #3182ce; /* Blue link color */
+  text-decoration: underline; /* Add underline to links */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  ul {
+    margin-left: 15px;
+    padding-left: 10px;
+  }
+}
+
+@layer components {
+  .custom-quill .ql-toolbar {
+    @apply bg-gray-100 dark:bg-gray-800 border-b dark:border-gray-700 p-2 rounded-t-lg;
+  }
+
+  .custom-quill .ql-toolbar .ql-formats {
+    @apply mr-2;
+  }
+
+  .custom-quill .ql-toolbar button {
+    @apply text-gray-400 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded p-1 transition;
+  }
+}
