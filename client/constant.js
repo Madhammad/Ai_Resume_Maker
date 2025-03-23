@@ -1,1 +1,1 @@
-export const URL_BACKEND = 'http://localhost:5000'
+export const URL_BACKEND = 'https://ai-resume-maker-fol6.onrender.com'
