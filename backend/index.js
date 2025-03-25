@@ -13,7 +13,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "https://ai-resume-maker-git-main-madhammads-projects.vercel.app/", credentials: true }));
+app.use(cors({ origin: "https://ai-resume-maker-chi.vercel.app/", credentials: true }));
 
 app.use(express.json());
 app.use(cookieParser());
