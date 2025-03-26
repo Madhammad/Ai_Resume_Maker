@@ -34,7 +34,7 @@ export default function AllCVs() {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          "https://ai-resume-maker-fol6.onrender.com/api/Aicv/getAllcv",
+          "http://localhost:5000/api/Aicv/getAllcv",
           {
             withCredentials: true,
           }
