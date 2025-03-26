@@ -13,7 +13,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors({ origin: "https://stupendous-praline-563a02.netlify.app/", credentials: true }));
 
 app.use(express.json());
 app.use(cookieParser());
